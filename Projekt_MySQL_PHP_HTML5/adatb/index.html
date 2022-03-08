@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=UTF8" >
+<style>
+    label {
+        margin: 5px;
+        padding: 5px;
+        text-align: left;
+        display: inline-block;
+        min-width: 120px;
+    }
+
+    input {
+        margin: 5px;
+        padding: 5px;
+        text-align: left;
+        display: inline-flex;
+        vertical-align: bottom;
+    }
+</style>
+<title>Adatok felvétele</title>
+</HEAD>
+<BODY>
+<a href="Adatok.php">Adatok megtekintése</a>
+<h1>Adatok felvétele</h1>
+
+
+<br>
+<br>
+<h1>Új Dolgozó felvétele</h1>
+<form method="POST" action="UjDolgozo.php" accept-charset="utf-8">
+   
+    <label>DolgozóiID: </label>
+    <input type="text" name="DolgozoiID" />
+    <br>
+    <label>Név: </label>
+    <input type="text" name="Nev" />
+    <br>
+    <label>Születési Dátum</label>
+    <input type="date" name="SzulDatum" />
+   <br>
+   <label>Lakcím </label>
+   <input type="text" name="Lakcim" />
+   <br>
+   <input type="submit" value="Elküld" />
+
+</form>
+<a href="DolgozoTorles.php" > Dolgozó törlés </a>
+<br>
+<a href="DolgozoModositas.php" > Dolgozó adatok módosítása </a>
+<br>
+<br>
+<br>
+<br>
+<h1>Új Használat felvétele</h1>
+<form method="POST" action="UjHasznalat.php" accept-charset="utf-8">
+   
+    <label>DolgozóiID: </label>
+    <input type="number" name="DolgozoiID" />
+    <br> 
+    <label>SzobaID: </label>
+    <input type="number" name="SzobaID" />
+    <br>
+    <label>Mikor: </label>
+    <input type="date" name="datum" />
+    <br>
+   <input type="submit" value="Elküld" />
+</form>
+<a href="HasznalatTorles.php" > Használat törlés </a>
+<br>
+<a href="HasznalatModositas.php" > Használati adatok módosítása </a>
+<br>
+<h1>Új Helyiség felvétele</h1>
+<form method="POST" action="UjHelyseg.php" accept-charset="utf-8">
+   
+    <label>SzobaID: </label>
+    <input type="text" name="SzobaID" />
+    <br> 
+   <br>
+   <input type="submit" value="Elküld" />
+
+</form>
+<br>
+<br>
+<br>
+<br>
+<h1>Új iroda felvétele</h1>
+<form method="POST" action="UjIroda.php" accept-charset="utf-8">
+   
+    <label>SzobaID: </label>
+    <input type="text" name="SzobaID" />
+    <br> 
+    <label>Iroasztal szám: </label>
+    <input type="number" name="Iroasztal" />
+    <br>
+    <label>Szék: </label>
+    <input type="number" name="Szék" />
+    <br>
+   <br>
+   <input type="submit" value="Elküld" />
+</form>
+<a href="IrodaTorles.php" > Iroda törlés </a>
+<br>
+<a href="IrodaModositas.php" > Iroda adatok módosítása </a>
+<h1>Új pihenő felvétele</h1>
+<form method="POST" action="UjPiheno.php" accept-charset="utf-8">
+   
+    <label>SzobaID: </label>
+    <input type="text" name="SzobaID" />
+    <br> 
+    <label>Fotel szám </label>
+    <input type="number" name="Fotel" />
+    <br>
+    <label>Kanapé szám: </label>
+    <input type="number" name="Szék" />
+    <br>
+    <label>Kávéfőző: </label>
+    <input type="number" name="Kávéfőző" />
+    <br>
+   <br>
+   <input type="submit" value="Elküld" />
+</form>
+<a href="PihenoTorles.php" > Pihenő törlés </a>
+<br>
+<a href="PihenoModositas.php" > Pihenő adatok módosítása </a>
+<br>
+<h1>Új Számítógép felvétele</h1>
+<form method="POST" action="UjSzamitogep.php" accept-charset="utf-8">
+   
+    <label>Rendszere: </label>
+    <input type="text" name="rendszer" />
+    <br> 
+    <label>SzámítógépID: </label>
+    <input type="number" name="szgepID" />
+    <br>
+    <label>Processzor: </label>
+    <input type="text" name="Processzor" />
+    <br>
+    <label>GPU: </label>
+    <input type="text" name="GPU" />
+    <br>
+   <br>
+   <input type="submit" value="Elküld" />
+</form>
+<a href="SzamitogepTorles.php" > Számítógép törlés </a>
+<br>
+<a href="SzamitogepModositas.php" > Számítógép adatok módosítása </a>
+<br>
+<h1>Új Telefon felvétele</h1>
+<form method="POST" action="UjTelefon.php" accept-charset="utf-8">
+   
+    <label>DolgozóiID: </label>
+    <input type="number" name="dolgozoiID" />
+    <br> 
+    <label>Telefonszám: </label>
+    <input type="text" name="telefonszam" />
+    <br>
+    <label>Típusa: </label>
+    <input type="text" name="type" />
+    <br>
+   <input type="submit" value="Elküld" />
+</form>
+<a href="TelefonTorles.php" > Telefon törlés </a>
+<br>
+<a href="TelefonModositas.php" > Telefon adatok módosítása </a>
+<br>
+
+
+
+</BODY>
+</HTML>
